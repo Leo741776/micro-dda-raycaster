@@ -1,13 +1,13 @@
 # Embedded DDA Raycaster
 
-A custom embedded 3D raycasting engine built from scratch in C for a microcontroller platform. The engine uses a fixed-grid map, DDA ray traversal, and fixed-point math to render a real-time pseudo-3D environment on an ST7735 display. It implements player movement, collision detection, camera rotation, directional lighting, and optimized column-based rendering using precomputed lookup tables for efficient performance on hardware without an FPU. I developed a [desktop version](https://github.com/Leo741776/dda-raycaster) as well, with a crisper image and higher frame rate.
+A custom embedded 3D raycasting engine built from scratch in C for an STM32 Nucleo microcontroller. The engine uses a fixed-grid map, DDA ray traversal, and fixed-point math to render a real-time pseudo-3D environment on an ST7735 display. It implements player movement, collision detection, camera rotation, directional lighting, and optimized column-based rendering using precomputed lookup tables for efficient performance on hardware without an FPU. I developed a [desktop version](https://github.com/Leo741776/dda-raycaster) as well, with a crisper image and higher frame rate.
 
 ## Overview
 
 Designed specifically for microcontroller hardware without a floating point unit:
 - Fixed-point arithmetic - Q16.16 math replaces floating-point operations for efficient integer-based calculations.
 - Precomputed trig tables - Sine/cosine lookup tables eliminate expensive runtime trigonometric calculations.
-- Column-based rendering - Optimized vertical slice drawing minimizes SPI communication overhead with the ST7735 display.
+- Column-based rendering - Vertical slice drawing minimizes SPI communication overhead with the ST7735 display.
 
 Modular Architecture
 - **main.c / main.h** - Hardware initialization, application loop, input polling, and system integration.
