@@ -1,6 +1,6 @@
 # Embedded DDA Raycaster
 
-A custom embedded 3D raycasting engine built from scratch in C for a microcontroller platform. The engine uses a fixed-grid map, DDA ray traversal, and fixed-point math to render a real-time pseudo-3D environment on an ST7735 display. It implements player movement, collision detection, camera rotation, directional lighting, and optimized column-based rendering using precomputed lookup tables for efficient performance on hardware without an FPU.
+A custom embedded 3D raycasting engine built from scratch in C for a microcontroller platform. The engine uses a fixed-grid map, DDA ray traversal, and fixed-point math to render a real-time pseudo-3D environment on an ST7735 display. It implements player movement, collision detection, camera rotation, directional lighting, and optimized column-based rendering using precomputed lookup tables for efficient performance on hardware without an FPU. I developed a [desktop version](https://github.com/Leo741776/dda-raycaster) as well, with a crisper image and higher frame rate.
 
 ## Overview
 
@@ -19,3 +19,4 @@ Modular Architecture
 - **fixed_point.h** - Q16.16 arithmetic utilities for integer-based calculations.
 - **trig_table.c / trig_table.h** - Precomputed trigonometric values for fast rotation calculations.
 - **controls.h** - GPIO button definitions and input state handling.
+
