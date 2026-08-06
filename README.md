@@ -5,9 +5,9 @@ A custom embedded 3D raycasting engine built from scratch in C for an STM32 Nucl
 ## Overview
 
 Designed specifically for microcontroller hardware without a floating point unit:
-- Fixed-point arithmetic - Q16.16 math replaces floating-point operations for efficient integer-based calculations.
-- Precomputed trig tables - Sine/cosine lookup tables eliminate expensive runtime trigonometric calculations.
-- Column-based rendering - Vertical slice drawing minimizes SPI communication overhead with the ST7735 display.
+- **Fixed-point arithmetic** - Q16.16 math replaces floating-point operations for efficient integer-based calculations.
+- **Precomputed trig tables** - Sine/cosine lookup tables eliminate expensive runtime trigonometric calculations.
+- **Column-based rendering** - Vertical slice drawing minimizes SPI communication overhead with the ST7735 display.
 
 Modular Architecture
 - **main.c / main.h** - Hardware initialization, application loop, input polling, and system integration.
