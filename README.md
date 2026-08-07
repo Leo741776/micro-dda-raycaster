@@ -5,11 +5,13 @@ A custom embedded 3D raycasting engine built from scratch in C for an STM32 Nucl
 ## Overview
 
 Designed specifically for microcontroller hardware without a floating point unit:
+
 - **Fixed-point arithmetic** - Q16.16 math replaces floating-point operations for efficient integer-based calculations.
 - **Precomputed trig tables** - Sine/cosine lookup tables eliminate expensive runtime trigonometric calculations.
 - **Column-based rendering** - Vertical slice drawing minimizes SPI communication overhead with the ST7735 display.
 
 Modular Architecture
+
 - **main.c / main.h** - Hardware initialization, application loop, input polling, and system integration.
 - **dda.c / dda.h** - Digital Differential Analysis raycasting algorithm, ray traversal, wall detection, and projection calculations.
 - **player.c / player.h** - Player position management, fixed-point movement, collision detection, and camera rotation.
@@ -20,3 +22,8 @@ Modular Architecture
 - **trig_table.c / trig_table.h** - Precomputed trigonometric values for fast rotation calculations.
 - **controls.h** - GPIO button definitions and input state handling.
 
+## Schematic
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/58b5aa53-9164-4276-bf47-f3b38c98ae86" width="50%">
+<p>
