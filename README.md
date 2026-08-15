@@ -25,7 +25,6 @@ Modular Architecture
 ## Schematic
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/58b5aa53-9164-4276-bf47-f3b38c98ae86" width="30%">
-    <img src="https://github.com/user-attachments/assets/3de3a464-ce5d-492b-9bfe-a12056e9c969" width="30%">
-    <img src="https://github.com/user-attachments/assets/7b54c4a6-85ce-42ab-b81e-01bd34777732" width="30%">
+    <img src="media/1.jpeg" width="45%">
+    <img src="media/2.gif" width="45%">
 </p>
