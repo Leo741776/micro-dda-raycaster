@@ -22,7 +22,7 @@ Modular Architecture
 - **trig_table.c / trig_table.h** - Precomputed trigonometric values for fast rotation calculations.
 - **controls.h** - GPIO button definitions and input state handling.
 
-## Schematic
+## Demo
 
 <p align="center">
     <img src="media/1.jpeg" width="45%">
